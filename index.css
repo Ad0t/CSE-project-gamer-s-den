@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(https://i.redd.it/jo89zfzqi9t51.png);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.bar {
+    position: fixed;
+    left: 2em;
+    border-radius: 25px;
+    z-index: 10;
+    height: 200px;
+    width: 595px;
+    background-color: rgba(255, 255, 255,1);
+    background: url(https://i.pinimg.com/736x/3f/10/ed/3f10edb4ad114f2e35d148f4f9037d14.jpg);
+    background-position: 50%;
+    background-size: 130%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bar a {
+    position: fixed;
+    color: white;
+    text-decoration: none;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 15fr);
+    grid-template-rows: repeat(7, 5fr);
+    gap: 2em;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 25px;
+    width: 97%;
+    height: auto;
+    margin: 20px auto;
+    /* background-color: rgba(255,0,0,0.5); */
+}
+.box {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 25px;
+    /* background-color: rgba(243, 0, 0, 0.5); */
+    min-height: 200px;
+    min-width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease-in;
+}
+.box:hover {
+    /* background-color: rgba(255,255,255,0.5); */
+    transform: scale(1.03);
+}
+.box a:hover {
+    color: white;
+    opacity: 100;
+}
+.box a {
+    height: 100%;
+    width: 100%;
+    padding: max;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.main {
+    border-radius: 25px;
+    grid-area: 1/1/2/2;
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.keys {
+    /* grid-column: 1/2;
+    grid-row: 1/3; */
+    grid-area: 1/2/3/3;
+    background-image: url(https://wallpapercave.com/wp/wp8737359.png);
+    background-size: cover;
+    background-position: center;
+}
+.tictactoe {
+    grid-area: 1/3/3/4;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1qkW2KbI1AtkUMNLNm0F1RtEjKF3CuovoQ&s);
+    background-size: 120%;
+    background-position: center;
+}
+.rockpaperscissor {
+    background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*hPhzeFD3htF7ly1AMmAVbw.png);
+    background-position-x: 20px;
+    background-position-y: -70px;
+    background-size: 90%;
+}
+.whacamole {
+    background-image: url(https://media.istockphoto.com/id/1153033854/vector/a-game-to-hit-the-mole.jpg?s=612x612&w=0&k=20&c=Zugmk3xO6JASmNN4sNwpaekrstBXjUA2fdIAJRi3v5Y=);
+    background-position: center;
+    background-size: 70%;
+    grid-area: 3/ 2/ 5/4;
+}
+.flappybird {
+    background-image: url(https://m.media-amazon.com/images/I/21ZzpgClpiL.png);
+    background-position: center;
+    background-size: 100%;
+    grid-area: 4/ 1/ 6/ 2;
+}
+.snake {
+    background-image: url(https://static1.anpoimages.com/wordpress/wp-content/uploads/2021/10/google-chrome-snake-hero.jpg);
+    background-position: center;
+    background-size: 120%;
+    grid-area: 6/ 1/ 7/ 2;
+}
+.minesweeper {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/03/a0/9d/03a09d1c-ee40-9c64-b079-48d72be03c41/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/1200x600wa.png);
+    background-position: center;
+    background-size: 90%;
+    grid-area: 5/ 3/6/4;
+}
+.pokedex {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/121/449/307/pokemon-cartoon-minimalist-pokeball-wallpaper-thumb.jpg);
+    background-position: 0px -140px;
+    background-size: 100%;
+    grid-area: 3/ 1/ 4/ 2;
+}
+.info {
+    border-radius: 25px;
+    width: 97%;
+    height: 40vh;
+    margin: 20px auto;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(7, 4, 4);
+    color: white;
+    width: 100vw;
+    
+}
+.footer-up {
+    margin: 1em 3em;
+    padding: 1em;
+    width: 800px;
+    text-align: center;
+    /* background-color: red; */
+}
+.footer-up span {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-size: 50px;
+    margin: 30px 0;
+    font-size: 40px;
+    display: block;
+    /* font-family: "Rubik Wet Paint", system-ui; */
+}
+.footer-up p {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 100;
+    font-size: 20px;
+}
+.footer-down p {
+    display: inline;
+    margin-right: 40px;
+    cursor: default;
+
+}
+.footer-down a {
+    margin-right: 20px;
+    text-decoration: underline;
+    color: white;
+}
+.footer-down {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 3em;
+    /* background-color: red; */
+    padding: 1em;
+    padding-bottom: 3em;
+}
